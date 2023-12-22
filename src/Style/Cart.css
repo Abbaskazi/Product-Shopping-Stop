@@ -1,0 +1,41 @@
+.cart-Thumbnail{
+    width: 100%;
+    height: auto;
+    
+}
+.cart-product-container{
+    width: 300px;
+    height: auto;
+    border: 1px solid black;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.thumbnail-image{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.Product-Desc{
+    margin: 10px 0;
+}
+.Delete-Btn{
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.Delete-Btn:hover{
+    background-color: crimson;
+    color: white;
+    border: 1px solid crimson;
+    box-shadow: 0 0 10px crimson;
+}
+.CartModal{
+    display: flex;
+}

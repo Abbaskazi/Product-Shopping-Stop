@@ -1,0 +1,241 @@
+.header{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;   
+}
+.header h2{
+    margin-top: 25px;
+}
+.header input{
+    height: 30px;
+    margin-top: 23px;
+    width: 250px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.header button{
+    width: 70px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.header button:hover{
+    background-color: rgb(0, 255, 170);
+    box-shadow: 0px 0px 20px rgb(0, 255, 170);
+    color: rgba(255, 255, 255, 0.774);
+}
+
+.selectedFilters{
+    margin-top: 30px;
+    text-align: center;
+}
+.filterClear{
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0px; /* Adjust the gap as needed */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .product-container {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .thumbnail-img{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+  }
+  .thumbnail-img img {
+    margin-top: 50px;
+    width: 100%; /* Adjust to fill the container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  .Product-Heading{
+    text-align: center;
+  }
+  .Products-title{
+    margin: 0;
+  }
+  .Products-price{
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .Products-rating{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .Products-rating span{
+    margin-right: 10px;
+  }
+  .CartBtn{
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+  .CartBtn:hover{
+    background-color: rgb(0, 255, 170);
+    box-shadow: 0px 0px 20px rgb(0, 255, 170);
+    color: rgba(255, 255, 255, 0.774); 
+
+  }
+  .product-Images{
+    width: 100%;
+    height: 500px;
+    
+  }
+  .Product-img{
+    height: 350px;
+  }
+  .Product-img img{ 
+        margin-left: 27%;
+        width: auto;
+        height: 340px;
+
+  }
+  .Prevbtn{
+    position: absolute;
+    top: 200px;
+    left: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .NextBtn{
+    position: absolute;
+    top: 200px;
+    right: 0;
+    margin: 10px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+  }
+  .Product-desc-Modal{
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .Product-price-Modal{
+    margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .Rating{
+    display: flex;
+    margin: 10px 0;
+  }
+  .Rating span{
+    margin-right: 10px;
+
+  }
+  .ModalHead{
+    display: flex;
+  }
+  .ModalHead button{
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: 0;
+    background-color: transparent;
+    font-size: 30px;
+  }
+
+  .Add-Cart-Btn-Modal{
+    width: 100px;
+    height: 30px;
+    margin-top: 25px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.Add-Cart-Btn-Modal:hover{
+    background-color: rgb(0, 255, 170);
+    box-shadow: 0px 0px 20px rgb(0, 255, 170);
+    color: rgba(255, 255, 255, 0.774);
+}
+.filter{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.buttons button{
+    margin: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    transition: 0.5s ease;
+}
+.buttons button:hover{
+    background-color: cornflowerblue;
+    color: white;
+    box-shadow: 0 0 10px cornflowerblue;
+    border: 1px solid white;
+}
+.filterModalHead{
+    margin: 20px 0;
+}
+.filterModalHead button{
+    position: absolute;
+    top: 50px;
+    right: 30px;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    border-radius: 30px;
+    padding-top: 5px;
+}
+.filterModalHead button:hover{
+    background-color: rgba(169, 169, 169, 0.354);
+}
+@media(max-width: 800px){
+    .filter{
+        grid-template-columns: 1fr;
+    }
+    .filter label{
+        margin: 10px;
+    }
+}
